@@ -49,7 +49,11 @@ function nextSlide(){
   
 }
 const button_next = document.querySelectorAll(".arrow-button-right")[0];
-button_next.addEventListener('click', nextSlide);
+if (typeof button_next !== 'undefined') {
+  button_next.addEventListener('click', nextSlide);  
+}
+
+
 
 //Button Previous Slide
 
@@ -72,7 +76,11 @@ function previousSlide(){
  timer.reset(slidetime);
 }
 const button_previous = document.querySelectorAll(".arrow-button-left")[0];
-button_previous.addEventListener('click', previousSlide);
+if (typeof button_previous !== 'undefined') {
+  button_previous.addEventListener('click', previousSlide);
+}
+
+
 
 // Slide Circle Indicators
 
